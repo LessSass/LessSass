@@ -1,0 +1,40 @@
+@mainColor: #3F6998; 
+@black_medium: #454545; 
+
+@font: Georgia;
+
+.txt {
+    font: @font;
+    background-color: @mainColor;
+    color: white;
+    text-align: center;	
+}
+
+h1{
+    font: @font;
+    color: @mainColor;
+    margin: 0px auto;
+    width: 266px;
+    height: 35px;
+}
+.post {
+
+    width: 500px;
+    height: 730px;
+    margin: 0px auto;
+    
+    p {
+    .txt();
+    }
+
+    a {
+        color: white;
+        background-color: @black_medium;
+        text-decoration: none;
+        padding: 5px;
+    }
+    
+    a:hover {
+        color: mainColor;
+    }  
+}
