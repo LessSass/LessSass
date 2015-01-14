@@ -149,12 +149,69 @@ Step 7: Write some Sass! Open up the test.scss file. Add the following code:
 
 This is Sassy CSS (hence the .scss), one of the two variations of Sass. It’s similar structure and syntax to CSS makes it an easy place to start. To ease the learning curve, it’s also very similar syntax to LESS.
 Save this file, and you should see your command prompt churning away. It’ll come up with a message like…
->>> Change detected to: C:/Users/Username/Documents/sass-test/test.scss
+* >>>Change detected to: C:/Users/Username/Documents/sass-test/test.scss
 or
->>> Change detected to: test.scss
+* >>> Change detected to: test.scss
 
 …which means everything’s working as it should be!  It’ll keep automatically watching for any changes you make, every time you save the file.
 
 Now, if you look at your test.css, you’ll see it’s generated:
 
 ![](test.png)
+
+Great success!
+
+Step 8: Hook it up to the HTML… if you haven’t already! For anyone who’s been hanging on, waiting for the surprise and excitement of seeing their Compass styles in action, get ready to have your mind blown!
+I’m going to create an index.html in the same sass-test directory, this will be where we hook in our newly generated CSS.
+First of all, I’ll stop watching my project with Ctrl+C, then I’ll create the HTML file with the touch/echo command used earlier.
+On Mac:
+$ touch index.html
+On Windows:
+$ echo.> index.html
+Let’s open up the index.html in our text editor of choice and add some basic markup.
+
+![](sasshtml.png)
+
+Step 9: Now open it up in the browser and behold the wondrous power of–
+
+![](sass_project.png)
+
+If you follow the code from our GitHub and open it up the browser. 
+You will see below:
+
+![](sassproject_2.png)
+
+## Variables
+Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the $ symbol to make something a variable. Here's an example:
+
+![](variables syntax.png)
+
+## Nesting
+
+When writing HTML you've probably noticed that it has a clear nested and visual hierarchy. CSS, on the other hand, doesn't.
+Sass will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. Be aware that overly nested rules will result in over-qualified CSS that could prove hard to maintain and is generally considered bad practice.
+With that in mind, here's an example of some typical styles for a site's navigation:
+
+![](nesting scss.png)
+
+![](nesting css.png)
+
+## Mixins
+Some things in CSS are a bit tedious to write, especially with CSS3 and the many vendor prefixes that exist. A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. A good use of a mixin is for vendor prefixes. Here's an example for # border-radius.
+
+![](Mixin_sass.png)
+
+## Extend/Inheritance
+This is one of the most useful features of Sass. Using @extend lets you share a set of CSS properties from one selector to another. It helps keep your Sass very DRY. In our example we're going to create a simple series of messaging for errors, warnings and successes.
+
+![](extend SASS.png)
+
+![](extend CSS .png)
+
+
+
+
+
+
+
+
