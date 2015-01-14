@@ -59,5 +59,7 @@ Here a  couple terms and tools you need to understand before we dive in.
  Now we have a simple, working, and styled website that we hardly understand. Correct? Let’s go through it piece by piece!
  
 Variables: 
+
 ![](variables.png)
+
 Once again, think about programming. What’s a variable? In Less, they work the same exact ways. We use the “@” symbol in front of a name and then define it. We recommend using names that relate to the definition. For example, when using colors you probably want to 
