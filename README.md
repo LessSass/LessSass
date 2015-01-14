@@ -57,3 +57,94 @@ Here a  couple terms and tools you need to understand before we dive in.
 ![](lessExample.png)
 
  Now we have a simple, working, and styled website that we hardly understand. Correct? Let’s go through it piece by piece!
+ 
+Variables: 
+
+![](variables.png)
+
+Once again, think about programming. What’s a variable? In Less, they work the same exact ways. We use the “@” symbol in front of a name and then define it. We recommend using names that relate to the definition. For example, when using colors you probably want to either use a name that describes the color or relates to where the color is being used. Once defined, these variables can be used anywhere. We will see them in action soon.
+
+Mixin:
+
+![](mixin.png)
+
+A mixin is basically a function that can be called in any selector. Under our variables we have a .txt which is a mixin (not a class). Inside we set up a whole bunch of styling that is going to be applied any time there are paragraphs of text. Instead of copying all these lines each time, we simply need to call it in our paragraphs, you’ll see that happen in just a bit. 
+
+Notice something a little strange? why is font set to @font? Why is background-color set to @mainColor? Yup, you guest it  - that’s our variables in action!
+
+Nesting:
+
+![](nesting.png)
+
+Nesting is a great feature to help keep thing organized. Here, we have a div with the class “post”. Inside that div there is a paragraph, link, and image. Instead of keeping it all separate and writing all the sizes over and over again. We can nest the added information in side the .post selector. Awesome! Let’s go step by step.
+We have given our entire div some simple styling rules to keep things nice and neat.
+Check out what is happening in our paragraph. If you had to guess what .txt(); is doing what would you say? If you guessed calling the mixin .txt, you are correct! Doesn’t that look similar to calling a function in JavaScript?
+Then we have some basic styling set up for a link.
+
+Now that you are a Less expert, let’s do an exercise! 
+
+Using less, style a div that contains a paragraph of text. The div should have a border-radius and a box-shadow of any size and color. 
+You will need to have a basic HTML and .less file. Feel free to give your page extra styling! 
+
+![](lessExercise.png)
+
+In the same GitHub repo, the solutions are posted as lessTest.HTML and lessTest.less.
+
+
+## SASS- 
+
+## Preprocessing-
+
+CSS on its own can be fun, but stylesheets are getting larger, more complex, and harder to maintain. This is where a preprocessor can help. Sass lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance and other nifty goodies that make writing CSS fun again.
+Once you start tinkering with Sass, it will take your preprocessed Sass file and save it out as a normal CSS file that you can use in your web site.
+
+Step 1: First you will need to install SASS in your laptop, please reference link below:
+
+           SASS Installation- http://sass-lang.com/install
+
+            P.S please make sure you have RUBY installed already. 
+
+Step 2. Enter the following line into your command prompt…
+ Note: If you’re on Mac, you may have to include sudo at the start if you are not the root         user. You won’t need to write this in Windows.
+
+$ [sudo] gem install sass
+
+If you do need to use sudo, it’ll just mean that you’ll have to type in your password before the command can run.
+The terminal should do some exciting stuff and eventually you’ll see a message likeblah blah blah… 1 gem installed. Woohoo! Sass is good to go… 
+
+Step 3: Once you finished install SASS. Navigate to your Documents folder on the command line using the cd command. 
+
+On Mac:
+
+$ cd Document
+
+On Windows:
+$ cd Users/<your-user-name>/Documents
+
+
+Step 4: Create a folder…..You could do this the the old-fashioned way, but why not use the  
+           command-line skillzzzz?
+
+Documents$ mkdir sass-test
+    
+Step 5: Then we’re going to create out Sass and CSS file with the touch command on Mac
+          or the echo command on Windows. 
+
+Documents$ cd sass-test
+On Mac:
+sass-test$ touch test.scss test.css
+On Windows:
+sass-test$ echo.>test.scss
+sass-test$ echo.>test.css
+    
+Step 6: Start “WATCHING” your Sass file
+
+sass-test$ sass --watch test.scss:test.css
+           The Sass tool has a method called --watch , here we’re telling it to watch out Sass file 
+           and compile it to our CSS on the fly. 
+           
+Step 7: Write some Sass! Open up the test.scss file. Add the following code:
+
+![](test.scss.png)
+
+
