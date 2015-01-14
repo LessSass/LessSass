@@ -142,4 +142,9 @@ Step 6: Start “WATCHING” your Sass file
 sass-test$ sass --watch test.scss:test.css
            The Sass tool has a method called --watch , here we’re telling it to watch out Sass file 
            and compile it to our CSS on the fly. 
+           
+Step 7: Write some Sass! Open up the test.scss file. Add the following code:
+
+![](test.scss.png)
+
 
