@@ -157,4 +157,4 @@ or
 
 Now, if you look at your test.css, you’ll see it’s generated:
 
-![](test)
+![](test.png)
