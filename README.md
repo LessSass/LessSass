@@ -147,4 +147,14 @@ Step 7: Write some Sass! Open up the test.scss file. Add the following code:
 
 ![](test.scss.png)
 
+This is Sassy CSS (hence the .scss), one of the two variations of Sass. It’s similar structure and syntax to CSS makes it an easy place to start. To ease the learning curve, it’s also very similar syntax to LESS.
+Save this file, and you should see your command prompt churning away. It’ll come up with a message like…
+>>> Change detected to: C:/Users/Username/Documents/sass-test/test.scss
+or
+>>> Change detected to: test.scss
 
+…which means everything’s working as it should be!  It’ll keep automatically watching for any changes you make, every time you save the file.
+
+Now, if you look at your test.css, you’ll see it’s generated:
+
+![](test.scss)
