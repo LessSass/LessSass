@@ -1,0 +1,35 @@
+@mainColor: #3F6998;
+@font: Georgia;
+
+h1{
+    font: @font;
+    color: @mainColor;
+    margin: 0px auto;
+    width: 266px;
+    height: 35px;
+}
+
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+    -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+    -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+    border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+    -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.post {
+    width: 500px;
+    height: 200px;
+    margin: 0px auto;
+    background-color: @mainColor;
+    padding: 5px;
+    text-align: center;
+    color: white;
+
+    .border-radius-custom(20px, 20px, 0px, 0px);
+    .box-shadow(10px, 10px, 6px, 0.3);   
+}

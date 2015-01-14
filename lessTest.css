@@ -1,0 +1,22 @@
+h1 {
+  font: Georgia;
+  color: #3f6998;
+  margin: 0px auto;
+  width: 266px;
+  height: 35px;
+}
+.post {
+  width: 500px;
+  height: 200px;
+  margin: 0px auto;
+  background-color: #3f6998;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  -webkit-border-radius: 20px 20px 0px 0px;
+  -moz-border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
+  -webkit-box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.3);
+}
