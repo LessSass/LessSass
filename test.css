@@ -1,0 +1,44 @@
+/*! Documents/sass-test/test.scss */
+/* Sass variables start with the $ sign,
+...that's about all that makes it different from LESS syntax :p */
+/*create variables */
+/*set an function*/
+h1 {
+  color: #F01B1B;
+  font-family: "Arial";
+  margin-left: 10px; }
+
+/* nesting */
+nav a {
+  color: #BADA55;
+  font-family: "Arial";
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px; }
+  nav a:hover {
+    color: #86a524; }
+
+/*call a function */
+.section, .section2, .section3 {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radus: 10px;
+  border-radius: 10px;
+  height: 40px;
+  width: 80px;
+  border: 5px solid purple;
+  margin-top: 20px;
+  margin-left: 10px; }
+
+.box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radus: 5px;
+  border-radius: 5px;
+  height: 10px;
+  width: 15px;
+  border: 3px solid #BADA55; }
+
+/*extend,inheritance*/
+
+/*# sourceMappingURL=test.css.map */
