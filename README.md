@@ -81,19 +81,6 @@ Nesting is a great feature to help keep thing organized. Here, we have a div wit
 2. Check out what is happening in our paragraph. If you had to guess what .txt(); is doing what would you say? If you guessed calling the mixin .txt, you are correct! Doesn’t that look similar to calling a function in JavaScript?
 3. We have some basic styling set up for a link.
 
-Now that you are a Less expert, let’s do an exercise! 
-
-####Excersise
-
-Using Less, style a div that contains a paragraph of text. The div should have a border-radius and a box-shadow of any size and color. Feel free to use [filler text](http://www.lipsum.com/) for the paragraph.
-
-You will need to have a basic HTML and .less file. Feel free to give your page extra styling! 
-
-Once completed, your page should look something like this:
-
-![](lessExercise.png)
-
-The solutions are posted as "lessTest.HTML" and "lessTest.less" but you shouldn't take a look at those without trying!
 
 ## SASS- 
 
@@ -211,6 +198,20 @@ This is one of the most useful features of SASS. Using @extend lets you share a 
 ![](extend SASS.png)
 
 ![](extend CSS .png)
+
+Now that you are a Less expert, let’s do an exercise! 
+
+####Excersise
+
+You can use either Less or SASS on this exercise. Please style a div that contains a paragraph of text. The div should have a border-radius and a box-shadow of any size and color. Feel free to use [filler text](http://www.lipsum.com/) for the paragraph.
+
+You will need to have a basic HTML and .less (or .scss) file. Feel free to give your page extra styling! 
+
+The final outcome should be something like this: 
+
+![](lessExercise.png)
+
+The solutions are posted as "lessTest.HTML" and "lessTest.less" but you shouldn't take a look at those without trying!
 
 
 
