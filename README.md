@@ -94,7 +94,7 @@ Once you start tinkering with SASS, it will take your preprocessed SASS file and
   Note: If you’re on Mac, you may have to include sudo at the start if you are not the root         user. 
   You won’t need to write this in Windows.
 
-  $ [sudo] gem install sass
+    $ [sudo] gem install sass
 
   If you do need to use sudo, it’ll just mean that you’ll have to type in your password before the command can run.
   The terminal should do some exciting stuff and eventually you’ll see a message likeblah blah blah… 1 gem 
@@ -141,13 +141,13 @@ Once you start tinkering with SASS, it will take your preprocessed SASS file and
 
     sass-test$ sass --watch test.scss:test.css
     
-    The Sass tool has a method called --watch , here we’re telling it to watch out Sass file and compile it to our      CSS on the fly. 
+  The Sass tool has a method called --watch , here we’re telling it to watch out Sass file and compile it to our      CSS on the fly. 
            
            
            
 *Step 6: Write some Sass! Open up the test.scss file. Add the following code:
 
-    ![](test.scss.png)
+   ![](test.scss.png)
 
 
    This is Sassy CSS (hence the .scss), one of the two variations of SASS. It’s similar structure and syntax to CSS     makes it an easy place to start. To ease the learning curve, it’s also very similar syntax to Less.
@@ -155,16 +155,16 @@ Once you start tinkering with SASS, it will take your preprocessed SASS file and
    Save this file, and you should see your command prompt churning away. It’ll come up with a message like…
 
 
-    >>>Change detected to: C:/Users/Username/Documents/sass-test/test.scss
+  >>>Change detected to: C:/Users/Username/Documents/sass-test/test.scss
       or
-    >>> Change detected to: test.scss
+  >>> Change detected to: test.scss
 
 
-     …which means everything’s working as it should be!  It’ll keep automatically watching for any changes you make,      every time you save the file.
+…which means everything’s working as it should be!  It’ll keep automatically watching for any changes you make,      every time you save the file.
 
    Now, if you look at your test.css, you’ll see it’s generated:
 
-    ![](test.png)
+   ![](test.png)
 
 
    Great success!
@@ -187,22 +187,22 @@ Once you start tinkering with SASS, it will take your preprocessed SASS file and
 
     Let’s open up the index.html in our text editor of choice and add some basic markup.
 
-    ![](sasshtml.png)
+   ![](sasshtml.png)
 
 
 *Step 8: Now open it up in the browser and behold the wondrous power of–
 
-    ![](sass_project.png)
+   ![](sass_project.png)
 
-     If you follow the code from our GitHub and open it up the browser. 
-     You will see below:
+If you follow the code from our GitHub and open it up the browser. 
+You will see below:
 
-    ![](sassproject_2.png)
+   ![](sassproject_2.png)
 
 ## Variables
 Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the $ symbol to make something a variable. Here's an example:
 
-    ![](variables syntax.png)
+   ![](variables syntax.png)
 
 ## Nesting
 
@@ -210,19 +210,21 @@ When writing HTML you've probably noticed that it has a clear nested and visual 
 SASS will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. Be aware that overly nested rules will result in over-qualified CSS that could prove hard to maintain and is generally considered bad practice.
 With that in mind, here's an example of some typical styles for a site's navigation:
 
-    ![](nesting scss.png)
-    ![](nesting css.png)
+   ![](nesting scss.png)
+   
+   ![](nesting css.png)
 
 ## Mixins
 Some things in CSS are a bit tedious to write, especially with CSS3 and the many vendor prefixes that exist. A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. A good use of a mixin is for vendor prefixes. Here's an example for # border-radius.
 
-    ![](Mixin_sass.png)
+   ![](Mixin_sass.png)
 
 ## Extend/Inheritance
 This is one of the most useful features of SASS. Using @extend lets you share a set of CSS properties from one selector to another. It helps keep your Sass very DRY. In our example we're going to create a simple series of messaging for errors, warnings and successes.
 
-    ![](extend SASS.png)
-    ![](extend CSS .png)
+   ![](extend SASS.png)
+   
+   ![](extend CSS .png)
 
 Now that you are a Less/Sass expert, let’s do an exercise! 
 
@@ -234,7 +236,7 @@ You will need to have a basic HTML and .less (or .scss) file. Feel free to give 
 
 The final outcome should be something like this: 
 
-    ![](lessExercise.png)
+   ![](lessExercise.png)
 
 The solutions are posted as "lessTest.HTML" and "lessTest.less" but you shouldn't take a look at those without trying! (There is no solutions for Sass....so you can't peak!)
 
