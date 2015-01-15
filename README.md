@@ -1,4 +1,4 @@
-#### ->LESS/SASS TUTORIAL<-
+#### {:.center} LESS/SASS TUTORIAL
 
 ### This tutorial focuses on teaching the two most common CSS processors - Less and SASS. Less is an npm which obviously uses Javascripts and SASS is based off Ruby. Both allow you to make use of a whole bunch of new functions and extensions. Which should you use on your next project? Let’s starts learning and figure that out together!
 
