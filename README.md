@@ -40,7 +40,7 @@ Here a couple terms and tools you need to understand before we dive in.
 
  There are many different ways to access Less but we are going to install it on our machines via npm.
 
-* Installation and Set-Up
+####Installation and Set-Up
 1. Open up command line and run:
      $ npm install -g less
 2. Less, unlike SASS, does not have a built in compiler. We like [less.app](http://download.cnet.com/Less-app/3000-10248_4-76116255.html) which is an open source GUI compiler application.
