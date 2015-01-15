@@ -55,14 +55,16 @@ Here a couple terms and tools you need to understand before we dive in.
 ![](lessExample.png)
 
  Now we have a simple, working, and styled website that we hardly understand. Correct? Let’s go through it piece by piece!
+
+####Examples and Explanation
  
-Variables: 
+#####Variables: 
 
 ![](variables.png)
 
 Once again, think about programming. What’s a variable? In Less, they work the same exact way. We use the “@” symbol in front of a name and then define it. We recommend using names that relate to the definition. For example, when using colors you probably want to either use a something that describes the color or relates to where the color is being used. Once defined, these variables can be used anywhere. We will see them in action soon.
 
-Mixin:
+#####Mixin:
 
 ![](mixin.png)
 
@@ -70,7 +72,7 @@ A mixin is basically a function that can be called in any selector. Under our va
 
 Notice something a little strange? why is font set to @font? Why is background-color set to @mainColor? Yup, you guest it  - that’s our variables in action!
 
-Nesting:
+#####Nesting:
 
 ![](nesting.png)
 
@@ -80,6 +82,8 @@ Nesting is a great feature to help keep thing organized. Here, we have a div wit
 3. We have some basic styling set up for a link.
 
 Now that you are a Less expert, let’s do an exercise! 
+
+####Excersise
 
 Using Less, style a div that contains a paragraph of text. The div should have a border-radius and a box-shadow of any size and color. Feel free to use [filler text](http://www.lipsum.com/) for the paragraph.
 
