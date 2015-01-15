@@ -155,9 +155,9 @@ Once you start tinkering with SASS, it will take your preprocessed SASS file and
    Save this file, and you should see your command prompt churning away. It’ll come up with a message like…
 
 
-  >>>Change detected to: C:/Users/Username/Documents/sass-test/test.scss
-      or
-  >>> Change detected to: test.scss
+     >>>Change detected to: C:/Users/Username/Documents/sass-test/test.scss
+          or
+     >>> Change detected to: test.scss
 
 
 …which means everything’s working as it should be!  It’ll keep automatically watching for any changes you make,      every time you save the file.
