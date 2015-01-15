@@ -96,7 +96,8 @@ Step 1: First you will need to install SASS in your laptop, please reference lin
             P.S please make sure you have RUBY installed already. 
 
 Step 2. Enter the following line into your command prompt…
- Note: If you’re on Mac, you may have to include sudo at the start if you are not the root         user. You won’t need to write this in Windows.
+ Note: If you’re on Mac, you may have to include sudo at the start if you are not the root         user. 
+ You won’t need to write this in Windows.
 
 $ [sudo] gem install sass
 
@@ -199,7 +200,7 @@ This is one of the most useful features of SASS. Using @extend lets you share a 
 
 ![](extend CSS .png)
 
-Now that you are a Less expert, let’s do an exercise! 
+Now that you are a Less/Sass expert, let’s do an exercise! 
 
 ####Excersise
 
@@ -211,7 +212,7 @@ The final outcome should be something like this:
 
 ![](lessExercise.png)
 
-The solutions are posted as "lessTest.HTML" and "lessTest.less" but you shouldn't take a look at those without trying!
+The solutions are posted as "lessTest.HTML" and "lessTest.less" but you shouldn't take a look at those without trying! (There is no solutions for Sass....so you can't peak!)
 
 
 
