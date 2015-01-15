@@ -91,18 +91,22 @@ Once you start tinkering with SASS, it will take your preprocessed SASS file and
 
 Step 1: First you will need to install SASS in your laptop, please reference link below:
 
-          [SASS Installation](http://sass-lang.com/install)
+          SASS Installation reference - http://sass-lang.com/install
 
             P.S please make sure you have RUBY installed already. 
+            
+            
 
 Step 2. Enter the following line into your command prompt…
- Note: If you’re on Mac, you may have to include sudo at the start if you are not the root         user. 
- You won’t need to write this in Windows.
+  Note: If you’re on Mac, you may have to include sudo at the start if you are not the root         user. 
+  You won’t need to write this in Windows.
 
 $ [sudo] gem install sass
 
 If you do need to use sudo, it’ll just mean that you’ll have to type in your password before the command can run.
 The terminal should do some exciting stuff and eventually you’ll see a message likeblah blah blah… 1 gem installed. Woohoo! Sass is good to go… 
+
+
 
 Step 3: Once you finished install SASS. Navigate to your Documents folder on the command line using the cd command. 
 
@@ -111,39 +115,57 @@ On Mac:
 $ cd Document
 
 On Windows:
+
 $ cd Users/<your-user-name>/Documents
+
 
 
 Step 4: Create a folder…..You could do this the the old-fashioned way, but why not use the  
            command-line skillzzzz?
 
 Documents$ mkdir sass-test
+
+
     
 Step 5: Then we’re going to create out Sass and CSS file with the touch command on Mac
           or the echo command on Windows. 
 
-Documents$ cd sass-test
+In Documents$ cd sass-test
+
 On Mac:
+
 sass-test$ touch test.scss test.css
+
 On Windows:
+
 sass-test$ echo.>test.scss
 sass-test$ echo.>test.css
+
+
     
 Step 6: Start “WATCHING” your Sass file
+
 
 sass-test$ sass --watch test.scss:test.css
            The Sass tool has a method called --watch , here we’re telling it to watch out Sass file 
            and compile it to our CSS on the fly. 
            
+           
+           
 Step 7: Write some Sass! Open up the test.scss file. Add the following code:
 
 ![](test.scss.png)
 
+
 This is Sassy CSS (hence the .scss), one of the two variations of SASS. It’s similar structure and syntax to CSS makes it an easy place to start. To ease the learning curve, it’s also very similar syntax to Less.
+
 Save this file, and you should see your command prompt churning away. It’ll come up with a message like…
+
+
 * >>>Change detected to: C:/Users/Username/Documents/sass-test/test.scss
 or
 * >>> Change detected to: test.scss
+
 
 …which means everything’s working as it should be!  It’ll keep automatically watching for any changes you make, every time you save the file.
 
@@ -151,18 +173,27 @@ Now, if you look at your test.css, you’ll see it’s generated:
 
 ![](test.png)
 
+
 Great success!
 
 Step 8: Hook it up to the HTML… if you haven’t already! For anyone who’s been hanging on, waiting for the surprise and excitement of seeing their Compass styles in action, get ready to have your mind blown!
+
 I’m going to create an index.html in the same sass-test directory, this will be where we hook in our newly generated CSS.
+
 First of all, I’ll stop watching my project with Ctrl+C, then I’ll create the HTML file with the touch/echo command used earlier.
+
 On Mac:
+
 $ touch index.html
+
 On Windows:
+
 $ echo.> index.html
+
 Let’s open up the index.html in our text editor of choice and add some basic markup.
 
 ![](sasshtml.png)
+
 
 Step 9: Now open it up in the browser and behold the wondrous power of–
 
