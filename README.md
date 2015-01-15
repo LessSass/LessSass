@@ -42,7 +42,9 @@ Here a couple terms and tools you need to understand before we dive in.
 
 ####Installation and Set-Up
 1. Open up command line and run:
+
      $ npm install -g less
+
 2. Less, unlike SASS, does not have a built in compiler. We like [less.app](http://download.cnet.com/Less-app/3000-10248_4-76116255.html) which is an open source GUI compiler application.
 3. You should have a folder created in which you can store HTML and styling files.
 4. In order to see this in action, we are going to need some basic HTML and Less. I have provided that for you in this repo. Take a look at "less.html" and "stylesLess.less".
