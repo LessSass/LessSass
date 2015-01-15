@@ -23,7 +23,7 @@ Here a couple terms and tools you need to understand before we dive in.
 2. Loops -
      Less features a “guarded mixin” capability, which are mixins (functions) that are implemented when a certain condition is met.
      Sass loops are far superior, with built-in while and for loops, and if-then-else statements.
-     We are not going to go into much detail about loops. But feel free to check out more on [Less and SASS loops.]http://www.zingdesign.com/less-vs-sass-its-time-to-switch-to-sass/)
+     We are not going to go into much detail about loops. But feel free to check out more on [Les and SASS loops](http://www.zingdesign.com/less-vs-sass-its-time-to-switch-to-sass/)
 
 3. Nesting -
      If we need to reference multiple elements with the same parent in our CSS, it can be tedious to keep writing the parent over and over. In both SASS and Less we have certain nesting powers which keeps us from writing the same properties a million times.
@@ -75,26 +75,28 @@ Nesting:
 ![](nesting.png)
 
 Nesting is a great feature to help keep thing organized. Here, we have a div with the class “post”. Inside that div there is a paragraph, link, and image. Instead of keeping it all separate and writing all the sizes over and over again. We can nest the added information in side the .post selector. Awesome! Let’s go step by step.
-We have given our entire div some simple styling rules to keep things nice and neat.
-Check out what is happening in our paragraph. If you had to guess what .txt(); is doing what would you say? If you guessed calling the mixin .txt, you are correct! Doesn’t that look similar to calling a function in JavaScript?
-Then we have some basic styling set up for a link.
+1. We have given our entire div some simple styling rules to keep things nice and neat.
+2. Check out what is happening in our paragraph. If you had to guess what .txt(); is doing what would you say? If you guessed calling the mixin .txt, you are correct! Doesn’t that look similar to calling a function in JavaScript?
+3. We have some basic styling set up for a link.
 
 Now that you are a Less expert, let’s do an exercise! 
 
-Using less, style a div that contains a paragraph of text. The div should have a border-radius and a box-shadow of any size and color. 
+Using Less, style a div that contains a paragraph of text. The div should have a border-radius and a box-shadow of any size and color. Feel free to use [filler text](http://www.lipsum.com/) for the paragraph.
+
 You will need to have a basic HTML and .less file. Feel free to give your page extra styling! 
+
+Once completed, your page should look something like this:
 
 ![](lessExercise.png)
 
-In the same GitHub repo, the solutions are posted as lessTest.HTML and lessTest.less.
-
+The solutions are posted as "lessTest.HTML" and "lessTest.less" but you shouldn't take a look at those without trying!
 
 ## SASS- 
 
 ## Preprocessing-
 
 CSS on its own can be fun, but stylesheets are getting larger, more complex, and harder to maintain. This is where a preprocessor can help. Sass lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance and other nifty goodies that make writing CSS fun again.
-Once you start tinkering with Sass, it will take your preprocessed Sass file and save it out as a normal CSS file that you can use in your web site.
+Once you start tinkering with SASS, it will take your preprocessed SASS file and save it out as a normal CSS file that you can use in your web site.
 
 Step 1: First you will need to install SASS in your laptop, please reference link below:
 
@@ -145,7 +147,7 @@ Step 7: Write some Sass! Open up the test.scss file. Add the following code:
 
 ![](test.scss.png)
 
-This is Sassy CSS (hence the .scss), one of the two variations of Sass. It’s similar structure and syntax to CSS makes it an easy place to start. To ease the learning curve, it’s also very similar syntax to LESS.
+This is Sassy CSS (hence the .scss), one of the two variations of SASS. It’s similar structure and syntax to CSS makes it an easy place to start. To ease the learning curve, it’s also very similar syntax to Less.
 Save this file, and you should see your command prompt churning away. It’ll come up with a message like…
 * >>>Change detected to: C:/Users/Username/Documents/sass-test/test.scss
 or
@@ -187,7 +189,7 @@ Think of variables as a way to store information that you want to reuse througho
 ## Nesting
 
 When writing HTML you've probably noticed that it has a clear nested and visual hierarchy. CSS, on the other hand, doesn't.
-Sass will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. Be aware that overly nested rules will result in over-qualified CSS that could prove hard to maintain and is generally considered bad practice.
+SASS will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. Be aware that overly nested rules will result in over-qualified CSS that could prove hard to maintain and is generally considered bad practice.
 With that in mind, here's an example of some typical styles for a site's navigation:
 
 ![](nesting scss.png)
@@ -200,7 +202,7 @@ Some things in CSS are a bit tedious to write, especially with CSS3 and the many
 ![](Mixin_sass.png)
 
 ## Extend/Inheritance
-This is one of the most useful features of Sass. Using @extend lets you share a set of CSS properties from one selector to another. It helps keep your Sass very DRY. In our example we're going to create a simple series of messaging for errors, warnings and successes.
+This is one of the most useful features of SASS. Using @extend lets you share a set of CSS properties from one selector to another. It helps keep your Sass very DRY. In our example we're going to create a simple series of messaging for errors, warnings and successes.
 
 ![](extend SASS.png)
 
