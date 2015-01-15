@@ -51,6 +51,7 @@ Here a couple terms and tools you need to understand before we dive in.
 6. We like less.app because it is super simple to use + has an awesome built in error feature. When an error occurs and CSS couldn’t be compiled, Less.app will alert you with a log of where the error occurred.
 7. We linked the CSS for you already. But, it is important to note that in the HTML file you will link to CSS not a Less file.
 8. Pop your HTML into a browser to check it out.
+9. If you are using sublime, you will notice that .less or .scss files do not have any colors. Which is annoying, right? Check out this [GitHub repo](https://github.com/danro/LESS-sublime)!
 
 ![](lessExample.png)
 
