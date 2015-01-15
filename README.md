@@ -1,34 +1,35 @@
-#### LESS/SASS TUTORIAL
+## LESS/SASS TUTORIAL
 
-### This tutorial focuses on teaching the two most common CSS processors - Less and SASS. Less is an npm which obviously uses Javascripts and SASS is based off Ruby. Both allow you to make use of a whole bunch of new functions and extensions. Which should you use on your next project? Let’s starts learning and figure that out together!
+#### This tutorial focuses on teaching the two most common CSS processors - Less and SASS. Less is an npm which uses Javascripts while SASS is Ruby based. Both allow for us to being writting more dynamic stylsheets for better code. Which should you use on your next project? Let’s starts learning and figure that out together!
 
-###The important thing to remember is to keep calm. This all seems like a lot of super confusing information. In fact, many programmers wanted to stay away from CSS processors because they seem so complicated. But you know CSS, JavaScript, and Ruby. You just have to learn how to write code in a little bit of a new way. We promise, this will change your life forever… in a good way.
+####The important thing to remember is to keep calm. This all seems like a lot of super confusing information. In fact, many programmers wanted to stay away from CSS processors because they seem so complicated. But you already know basic HTML, CSS, JavaScript, and Ruby. You just have to learn how to write code in a little bit of a new way. We promise, this will change your life forever… in a good way.
 
 ### What is a CSS Processor?
-Basically a supercharged CSS file that contains variables, functions, "mixins", and other features. After development, these special files get compiled into regular CSS files that all web browsers could understand.
-PLUS - this will make your CSS DRY. We are finally able to define properties ect. and keep reusing them. How cool is that?
+Basically a supercharged CSS file that contains variables, functions, "mixins", and other features. After development, these special files get compiled into regular CSS files that all web browsers understand.
+PLUS - this will make your CSS DRY! How? Because for the first time we are going to be able to use things like variables and functions. How cool is that?
+Think of it as a new, more functional, way of writting a language that you are already fluent in.
 
 ### What is Compiling?
-Something you need to understand from the beginning is that both Less and SASS will have a bunch of different files that need to be compiled into basic CSS.
-With SASS this will happen automatically through command line every time you save (more and that later). With Less you can download an open source app - Less.app (there are a few different apps available).
-The thing to realize is that you are not actually writing any CSS. We will be writing .SCSS and .LESS files. Each has a lot of different tools and functions you will be using that will then be compiled into regular CSS.
-It needs to be compiled in order to be rendered online. So your CSS will eventually look the same as you are used to. But, we are not writing that CSS out. This is a way to help you work better and be more organized.
+Something you need to understand is that while using Less and SASS you will not be creating CSS files - those will be compiled based off your code. 
+With SASS this will happen automatically, through command line, every time you save (more and that later). With Less we will be using an open source application - Less.app (there are a few different apps available).
+We will be writing .scss and .less files. Each has a lot of different tools and functions to use that will then be compiled into regular CSS. Our files must be compiled otherwise the browser will not understant them. But, we are not writing that CSS out. This is a way to help us work better and be more organized.
 
-### Basic for Both -
-Here a  couple terms and tools you need to understand before we dive in.
+### The Basics for Both -
+Here a couple terms and tools you need to understand before we dive in.
 
 1. Variables -
-     Variables can be used to easily use pre-assigned values anywhere in your stylesheet, for quick access to values like colors, which can be a hassle to track.
+     Variables are pre-assigned values anywhere that can be used anywhere in your stylesheet. Just like declaring a variable in JavaScript or Ruby! These really come in handy for saving color values.
 
 2. Loops -
-     Less features a “guarded mixin” capability, which are mixins (or classes that contain numerous methods from other classes) that are implemented when a certain condition is met.
+     Less features a “guarded mixin” capability, which are mixins (functions) that are implemented when a certain condition is met.
      Sass loops are far superior, with built-in while and for loops, and if-then-else statements.
+     We are not going to go into much detail about loops. But feel free to check out more on [Less and SASS loops.]http://www.zingdesign.com/less-vs-sass-its-time-to-switch-to-sass/)
 
 3. Nesting -
      If we need to reference multiple elements with the same parent in our CSS, it can be tedious to keep writing the parent over and over. In both SASS and Less we have certain nesting powers which keeps us from writing the same properties a million times.
 
-4. Mixins -
-     Mixins are functions. Yup, you heard it right - functions. Mixins allow us to reuse properties throughout our stylesheet. Think about programming. We define a function, and call it whenever we want that function to be used. Same thing here!
+4. Mixins - 
+     Mixins are functions. Yup, you heard it right - functions. Mixins allow us to assign a bunch of properties to one selector and then be called throughout our stylesheet. Think about programming. We define a function, and call it whenever we want that function to be used. Same thing here!
 
 5. Inheritance -
      Inheritance only exists in SASS, but it is still an important concept to understand before we get deep. Okay let’s say we want to select multiple selectors and add a bunch of the same properties to them.
@@ -37,21 +38,18 @@ Here a  couple terms and tools you need to understand before we dive in.
 
 ### Less -
 
- There are many different ways to use Less but we are going to install it on our machines via npm.
+ There are many different ways to access Less but we are going to install it on our machines via npm.
 
 * Installation and Set-Up
-1. Open up command line and run
+1. Open up command line and run:
      $ npm install -g less
-2. Less, unlike SASS, does not have a built in compiler. We like less.app which is an open source GUI compiler application. Download it here.
-3. You should have a folder created in which you can store a basic HTML file and all your styling files.
-4. In order to see this in action, we are going to need some basic HTML and Less. I have provided that for you here. You should not be using the CSS file.
-   That will be created through the compiler.
+2. Less, unlike SASS, does not have a built in compiler. We like [less.app](http://download.cnet.com/Less-app/3000-10248_4-76116255.html) which is an open source GUI compiler application.
+3. You should have a folder created in which you can store HTML and styling files.
+4. In order to see this in action, we are going to need some basic HTML and Less. I have provided that for you in this repo. Take a look at "less.html" and "stylesLess.less".
    Don’t worry if you don’t understand the information in the files - we are going to go over it line by line after we finish set-up.
-5. Open up less.app and import your .less file. The great thing is that you only have to do this once. You import a file, click on the compile tab and save your.
-   less file. This should automatically create a .css file in your folder. Every time you hit save - less.app will automatically compile the CSS.
-6. We like less.app because it is super simple to use + has an awesome built in error feature. When an error occurs and CSS couldn’t be compiled.
-   Less.app will alert you with a log of where the error occurred.
-7. We linked the CSS for you already. But, it is important to note that in the index file you will link to a CSS file not a Less file.
+5. Open up less.app and import your "stylesLess.less" file. The great thing is that you only have to do this once. Import the file, click on the compile tab and save the less file. This should automatically create a stylesLess.css file in your folder. Now, every time you hit save - less.app will automatically compile the CSS.
+6. We like less.app because it is super simple to use + has an awesome built in error feature. When an error occurs and CSS couldn’t be compiled, Less.app will alert you with a log of where the error occurred.
+7. We linked the CSS for you already. But, it is important to note that in the HTML file you will link to CSS not a Less file.
 8. Pop your HTML into a browser to check it out.
 
 ![](lessExample.png)
@@ -62,7 +60,7 @@ Variables:
 
 ![](variables.png)
 
-Once again, think about programming. What’s a variable? In Less, they work the same exact ways. We use the “@” symbol in front of a name and then define it. We recommend using names that relate to the definition. For example, when using colors you probably want to either use a name that describes the color or relates to where the color is being used. Once defined, these variables can be used anywhere. We will see them in action soon.
+Once again, think about programming. What’s a variable? In Less, they work the same exact way. We use the “@” symbol in front of a name and then define it. We recommend using names that relate to the definition. For example, when using colors you probably want to either use a something that describes the color or relates to where the color is being used. Once defined, these variables can be used anywhere. We will see them in action soon.
 
 Mixin:
 
