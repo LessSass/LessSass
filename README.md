@@ -104,7 +104,7 @@ Once you start tinkering with SASS, it will take your preprocessed SASS file and
 
 Step 1: First you will need to install SASS in your laptop, please reference link below:
 
-           SASS Installation- http://sass-lang.com/install
+          [SASS Installation](http://sass-lang.com/install)
 
             P.S please make sure you have RUBY installed already. 
 
